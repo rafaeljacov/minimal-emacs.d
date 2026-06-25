@@ -578,9 +578,9 @@
 
 (setq ibuffer-formats
       '((mark modified read-only locked
-              " " (name 55 55 :left :elide)
-              " " (size 8 -1 :right)
-              " " (mode 18 18 :left :elide) " " filename-and-process)
+         " " (name 55 55 :left :elide)
+         " " (size 8 -1 :right)
+         " " (mode 18 18 :left :elide) " " filename-and-process)
         (mark " " (name 16 -1) " " filename)))
 
 ;;; xref
@@ -604,7 +604,7 @@
 
 (setq dabbrev-ignored-buffer-modes
       '(archive-mode image-mode docview-mode tags-table-mode
-                     pdf-view-mode tags-table-mode))
+        pdf-view-mode tags-table-mode))
 
 (setq dabbrev-ignored-buffer-regexps
       '(;; - Buffers starting with a space (internal or temporary buffers)
@@ -616,9 +616,9 @@
 ;;; Remove warnings from narrow-to-region, upcase-region...
 
 (dolist (cmd '(list-timers narrow-to-region narrow-to-page
-                           upcase-region downcase-region
-                           list-threads erase-buffer scroll-left
-                           dired-find-alternate-file set-goal-column))
+               upcase-region downcase-region
+               list-threads erase-buffer scroll-left
+               dired-find-alternate-file set-goal-column))
   (put cmd 'disabled nil))
 
 ;;; Load post init
